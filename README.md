@@ -6,6 +6,21 @@
 
 Analyzing audience and cinephile reception, this project examines how visual and thematic elements influence the ratings of auteur-driven films across Criterion, IMDb, and Letterboxd, balancing artistic significance with broader audience trends.
 
+# Exploring Auteur Theory with Quantitative Methods  
+### Audience and Cinephile Reception of Criterion Films  
+
+## **Project Overview**  
+This research examines how auteur-driven films are perceived differently by cinephiles versus broader audiences. Using **Criterion Collection metadata, Letterboxd ratings, and IMDb data**, the project integrates quantitative analysis, sentiment trends, and clustering techniques to explore rating disparities, thematic correlations, and stylistic patterns.  
+
+## **Dependencies**  
+To run this project, ensure you have the following installed:  
+- Python 3.10+  
+- Conda or virtualenv for environment management  
+- Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
+- NLTK or spaCy for NLP analysis  
+- curl & wget (for data acquisition)  
+- Jupyter Notebook for exploration  
+
 ## Project Organization
 
 ```
