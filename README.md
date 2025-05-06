@@ -33,13 +33,11 @@ To run this project, ensure you have the following installed:
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 │
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+├── docs               <- Includes CSV files needed for notebooks
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Python notebook with data cleaning and visualizations
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
 │                         auteur_theory and configuration for tools like black
