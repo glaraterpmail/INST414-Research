@@ -12,63 +12,36 @@ Analyzing audience and cinephile reception, this project examines how visual and
 ## **Project Overview**  
 This research examines how auteur-driven films are perceived differently by cinephiles versus broader audiences. Using **Criterion Collection metadata, Letterboxd ratings, and IMDb data**, the project integrates quantitative analysis, sentiment trends, and clustering techniques to explore rating disparities, thematic correlations, and stylistic patterns.  
 
-## **Dependencies**  
-To run this project, ensure you have the following installed:  
-- Python 3.10+  
-- Conda or virtualenv for environment management  
-- Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
-- NLTK or spaCy for NLP analysis  
-- curl & wget (for data acquisition)  
-- Jupyter Notebook for exploration  
+## Project Organization (CCD)
 
-## Project Organization
+This repository contains data cleaning and visualization scripts for analyzing [your dataset topic]. The project processes social media datasets, standardizes structures, and generates insights on engagement.
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- Includes CSV files needed for notebooks
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Python notebook with data cleaning and visualizations
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         auteur_theory and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── auteur_theory   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes auteur_theory a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+### Repository Structure
 
---------
+## Data Sources
 
+The dataset consists of three CSV files, which provide input for data processing:
+1. `criterion.csv` - Films in the Criterion Collection are curated specifically for their artistic and cultural significance, ensuring my dataset includes highly stylized and auteur-driven works.
+2. `letterboxd.csv` - Letterboxd ratings can capture a diverse and passionate cinephile community's perspectives, offering unique insights into a niche audience preferences and trends align with Criterion’s mission.
+3. `imdb_top_1000.csv` - Incorporating IMDb ratings brings in a broader, more global measure of audience perception and popularity, balancing Letterboxd’s critical focus with audience-driven insights.
+4. 'merged_dataset.csv' - Identified column in Letterboxd dataset to match IMDb and Criterion. Merge IMDb and Letterboxd datasets on 'Title', and merge the result with Criterion dataset on 'Title.'
+
+## Analysis Pipeline
+1. Load CSV files and preprocess data.
+2. Handle missing values and clean inconsistencies.
+3. Standardize formats across datasets.
+4. Generate metrics such as engagement rates.
+5. Visualize trends using Python.
+
+## Notebooks
+The main notebook (`notebooks/INST414 - Research.ipynb`) performs:
+- Data cleaning procedures.
+- Merging operations to align datasets.
+- Visualization of trends in engagement metrics.
+
+## Setup Instructions
+To replicate the analysis:
+```bash
+git clone https://github.com/glaraterpmail/INST414-Research.git
+cd INST414-Research
+pip install -r requirements.txt
