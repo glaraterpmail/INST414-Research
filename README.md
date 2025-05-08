@@ -18,13 +18,21 @@ This repository contains data cleaning and visualization scripts for analyzing [
 
 ### Repository Structure
 
+docs/ - Contains CSV data files 
+
+notebooks/ - Includes Google Colab notebook for analysis 
+
+.gitignore - Specifies files to exclude from version control
+README.md - Project documentation 
+requirements.txt - Dependencies for running the analysis
+
 ## Data Sources
 
 The dataset consists of three CSV files, which provide input for data processing:
 1. `criterion.csv` - Films in the Criterion Collection are curated specifically for their artistic and cultural significance, ensuring my dataset includes highly stylized and auteur-driven works.
 2. `letterboxd.csv` - Letterboxd ratings can capture a diverse and passionate cinephile community's perspectives, offering unique insights into a niche audience preferences and trends align with Criterion’s mission.
 3. `imdb_top_1000.csv` - Incorporating IMDb ratings brings in a broader, more global measure of audience perception and popularity, balancing Letterboxd’s critical focus with audience-driven insights.
-4. 'merged_dataset.csv' - Identified column in Letterboxd dataset to match IMDb and Criterion. Merge IMDb and Letterboxd datasets on 'Title', and merge the result with Criterion dataset on 'Title.'
+4. `merged_dataset.csv` - Identifies column in Letterboxd dataset to match IMDb and Criterion. Merge IMDb and Letterboxd datasets on 'Title', and merge the result with Criterion dataset on 'Title.'
 
 ## Analysis Pipeline
 1. Load CSV files and preprocess data.
