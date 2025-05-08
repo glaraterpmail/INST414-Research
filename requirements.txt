@@ -1,16 +1,10 @@
-ipython
-jupyterlab
-loguru
-matplotlib
-mkdocs
-notebook
+google.colab
+
+# Packages 
+
 numpy
 pandas
-pip
-pytest
-python-dotenv
-ruff
-scikit-learn
-tqdm
-typer
--e .
+matplotlib.pyplot
+seaborn
+os
+
